@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <title>武汉马拉松 · 路线互动</title>
+  <link rel="stylesheet" href="css/timeline.css" />
+</head>
+<body>
+
+  <div class="container" id="slider">
+    <!-- 每一个 section 是一个赛段 -->
+    <section class="slide" id="start">
+        <h2>起点 · 武汉江滩</h2>
+        <div class="route-scene">
+          <img src="assets/wuhan-bg.jpg" class="bg" alt="背景图" />
+          <img src="assets/runner.png" class="runner" alt="跑者" />
+          <div class="info-box" onclick="toggleStartInfo()">📊 查看数据</div>
+          <div src="assets/noodle-bowl.png"class="hot-dry-noodle" onclick="showNoodleIntro()">🍜 江滩热干面摊</div>
+        </div>
+      
+        <div id="startInfo" class="popup hidden">
+          <p>历年起跑人数：30,000+</p>
+          <p>热门选手：张三、李四、王五</p>
+        </div>
+      
+        <div id="noodleIntro" class="popup hidden">
+          <p>武汉“过早”文化：江边热干面是标配，街头早点一条街...</p>
+        </div>
+    </section>
+      
+
+    <section class="slide" id="supply1">
+        <h2>补给站 · 江汉路</h2>
+        <p>模拟搅拌热干面 ↓</p>
+        <div class="noodle-area">
+          <img src="assets/noodle-bowl.png" id="noodleImg" alt="热干面图" />
+          <div id="stirCounter">搅拌次数：0</div>
+        </div>
+        <div id="noodleStory" class="popup hidden">
+          <p>热干面是武汉人最爱的早点。芝麻酱浓郁，拌面入魂！</p>
+        </div>
+    </section>
+      
+
+    <section class="slide" id="huanghelou">
+      <h2>途经 · 黄鹤楼</h2>
+      <img src="assets/huanghelou.jpg" alt="黄鹤楼" />
+    </section>
+
+    <section class="slide" id="donghu">
+      <h2>补给站 · 东湖绿道</h2>
+      <img src="assets/donghu.jpg" alt="东湖" />
+    </section>
+
+    <section class="slide" id="finish">
+        <h2>终点 · 欢乐谷</h2>
+        <p>输入你的姓名，领取专属完赛证书 🏅</p>
+        
+        <input type="text" id="runnerName" placeholder="你的姓名" />
+        <button id="generateBtn">生成证书</button>
+      
+        <div id="certificate" class="certificate hidden">
+          <h3>武汉马拉松 完赛证书</h3>
+          <p>恭喜 <span id="certName"></span> 成功完成“云跑江城”！</p>
+          <p class="date">日期：2025 年</p>
+        </div>
+    </section>
+      
+  </div>
+
+  <div class="nav-buttons">
+    <button id="prevBtn">← 上一段</button>
+    <button id="nextBtn">下一段 →</button>
+  </div>
+
+  <script src="js/timeline.js"></script>
+</body>
+</html>

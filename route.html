@@ -1,0 +1,40 @@
+<!-- route.html -->
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>武汉马拉松 - 起点</title>
+  <link rel="stylesheet" href="css/route.css" />
+</head>
+<body>
+
+  <div class="scene">
+    <img src="assets/jiangtan-bg.jpg" class="background" alt="武汉江滩背景" />
+    
+    <img src="assets/runner.png" class="runner" id="runner" alt="选手" />
+    
+    <img src="assets/noodle-cart.png" class="noodle-cart" id="cart" alt="热干面摊" />
+  </div>
+
+  <!-- 弹窗区域 -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-btn" id="closeModal">&times;</span>
+      <h2>赛事数据</h2>
+      <p>历年起跑人数：约30,000+</p>
+      <p>热门选手：李小跑、陈快脚、张飞奔</p>
+    </div>
+  </div>
+
+  <div id="noodle-info" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-btn" id="closeNoodle">&times;</span>
+      <h2>热干面文化</h2>
+      <p>“过早”是武汉人独有的早餐文化。热干面是其中最具代表性的小吃。</p>
+    </div>
+  </div>
+
+  <script src="js/route.js"></script>
+</body>
+</html>
